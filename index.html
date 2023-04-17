@@ -72,16 +72,6 @@
 
           <p>Simply looking at a map showing the locations of crashes in Hartford may give you a partial view into where crashes occur most frequently. A general map of the crashes isn’t necessarily a bad thing, but it does not tell an accurate or complete story. Using data from the UConn Connecticut Crash Data Repository, we are using the police crash reports from 2018-2022 to take that dimensional, spatial data of crash occurrences and assign them to their respective streets. From there, we can look at the amount of crashes on a specific street and then make stronger relationships for the data like percentages of a designated injury type on certain streets and crashes when adjusted for corridor length (distance of entire corridor).</p>
 
-          <p>Links must begin and end with `a` anchor tags, with the web address inside either single or double quotes. If you need guidance, check out this <a href='https://www.w3schools.com/html/html_basic.asp'>W3Schools HTML Tutorial</a>.
-
-          <p>When describing charts, maps, or tables that appear further below, refer to them "...as shown in Figure 1" or "...as shown in Table 1" and include those figure/table numbers in the titles or captions below.</p>
-
-          <p>Embed each of your published visualizations as an HTML iframe code, following instructions in <a href='https://handsondataviz.org/embed.html'>Chapter 9 of HODV</a>, similar to the sample below.</p>
-
-          <iframe title="Connecticut created desegregated schools for only 41 percent of Hartford Black &amp;amp; Latino students in 2019-20" aria-label="Interactive area chart" id="datawrapper-chart-fdcm0" src="https://datawrapper.dwcdn.net/fdcm0/8/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-          </script>
-
-          <p>ADD CAPTIONS like this -- Figure 1: Explore the <a href="https://datawrapper.dwcdn.net/fdcm0/">interactive chart</a> AND ADD your description of the chart here. Make sure your caption includes a direct link to your published chart or map in case the embed code fails to display.</p>
         </div>
       </div>
     </div>
@@ -94,7 +84,13 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Major Observations</h2>
-          <p>Create a separate section to describe how you obtained your data, key steps in your process, and cautions for interpreting its meaning. Write for an audience of future DataViz students who may wish to replicate your steps. Write in HTML format and always include links to data sources, such as <a href='https://public-edsight.ct.gov/'>CT EdSight</a>, and also link to your shared Google Sheets.</p>
+          <p class="lead">Major Observation 1: Main St. has the most crashes out of any street, but may not be the most dangerous.</p>
+          <p>From the initial data gathering, Main Street in Hartford had the highest number of crashes and crash related injuries from 2018-2022, with 1,153 individual incidents and 387 injuries. Yet, does this mean that Main Street is the most dangerous corridor for crashes? To answer that question we need to put our data into context. Right off the bat you may notice that the name “Main Street” denotes its centrality in Hartford, likely with high volumes of traffic and activity. This can be seen by Figure 1 below which highlights the stark number of crashes by injury type that occur in Main Street alone vs every other corrdor in Hartford. This difference is eye-popping but we will see later that while this chart is true, it is also very misleading and not the entire story. </p>
+          
+           <iframe width="790" height="489" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4wsYNXgPXR7Lo_Ap-mZrz9wElyOdImoQy0FA3u25BQlVfEiF9wTwJPT_tNAHYZVBHf8c84kf0ShQG/pubchart?oid=2141578919&amp;format=interactive"></iframe>
+          
+          <p>Figure 1: Explore the <a href="https://docs.google.com/spreadsheets/d/1duRT8nsONtIAhPnMzjYwjqUquowaMK_g3pGgJ5fqOyc/edit#gid=139685673">Hartford Total Crashes & Injuries by Street</a> and notice the patterns throughout it. As mentioned before, Main Street has by far the most crashes and is the only corridor with over 1,000 crashes. We can also notice that for every street, a majority of their crashes involved no injuries and almost no injuries were fatal. We can now expand on these observations and see if we normalize the data, will Main Steet still be the most dangerous corridor? </p>
+          
         </div>
       </div>
     </div>
